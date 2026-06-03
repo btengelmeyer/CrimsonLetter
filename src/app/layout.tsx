@@ -3,12 +3,12 @@ import { Source_Sans_3, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
-  variable: "--font-sans",
+  variable: "--font-source-sans",
   subsets: ["latin"],
 });
 
 const playfair = Playfair_Display({
-  variable: "--font-serif",
+  variable: "--font-playfair",
   subsets: ["latin"],
   weight: ["400", "700", "800", "900"],
 });
@@ -30,7 +30,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${sourceSans.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-zinc-900">
+      <body className="min-h-full flex flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
         {children}
       </body>
     </html>

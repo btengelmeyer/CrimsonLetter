@@ -5,6 +5,12 @@ const nextConfig = {
   assetPrefix: "/CrimsonLetter",
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "pedagog.ai",
+      },
+    ],
   },
 };
 

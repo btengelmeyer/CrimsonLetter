@@ -1,21 +1,41 @@
 @import "tailwindcss";
 
+/*
+ * Dark mode disabled for now. The `dark:` utilities are still in the JSX,
+ * but this custom variant ties them to a `.dark` class (never applied),
+ * so they stay inert. To re-enable OS-based dark mode later, delete this
+ * line and uncomment the prefers-color-scheme block below.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --crimson: #9e1b32;
+  --crimson-light: #f0617a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-crimson: var(--crimson);
-  --font-sans: var(--font-sans);
-  --font-serif: var(--font-serif);
+  --color-crimson-light: var(--crimson-light);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-playfair);
 }
+
+/* Dark mode disabled for now — re-enable by uncommenting this block.
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #09090b;
+    --foreground: #ededed;
+    color-scheme: dark;
+  }
+}
+*/
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-source-sans), Arial, Helvetica, sans-serif;
 }
