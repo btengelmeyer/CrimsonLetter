@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Placeholder image">
+  <rect width="1200" height="800" fill="#e7e5e4"/>
+  <rect x="0" y="0" width="1200" height="14" fill="#9e1b32"/>
+  <g fill="#a8a29e">
+    <circle cx="600" cy="360" r="120"/>
+    <path d="M360 620 L520 420 L640 540 L760 380 L900 620 Z"/>
+  </g>
+  <text x="600" y="730" font-family="Georgia, serif" font-size="42" fill="#78716c" text-anchor="middle">The Crimson Letter</text>
+</svg>
